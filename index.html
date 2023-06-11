@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Darg and Drop</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- success msg -->
+        <div class="suc">
+            <p>success <span onclick="cancel()">&#x2718;</span> </p>
+            <div class="line"></div>
+        </div>
+
+       <!-- drag-drop-container -->
+        <div class="drag-drop-container">
+            <div class="drag same">
+                <ul>
+                    <li draggable="true" class="list">Drag1</li>
+                    <li draggable="true" class="list">Drag2</li>
+                    <li draggable="true" class="list">Drag3</li>
+                </ul>
+            </div>
+            <div class="drop same">
+            </div>
+        </div>
+
+        <!-- Reset button  -->
+        <div class="reset">
+            <button onclick="reload()">reset</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

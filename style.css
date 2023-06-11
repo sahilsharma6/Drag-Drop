@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+    position: relative;
+}
+
+
+.drag-drop-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+}
+
+.same {
+    height: 70vh;
+    text-align: center;
+    background: #9acbcb;
+    width: 40vw;
+    font-size: 3rem;
+}
+
+.drag {
+    position: relative;
+}
+
+
+ul {
+
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    cursor: grabbing;
+
+
+}
+
+li {
+    border: 1px solid;
+    margin: 20px;
+    list-style: none;
+
+}
+
+.reset {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+button {
+    padding: 10px 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(24, 167, 172);
+    background-color: #302ea3;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #f3f1f1;
+}
+
+button:active {
+    background-color: #3f95d3;
+    color: #ffffff;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
+
+
+
+.suc {
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    background: rgb(122, 253, 161);
+    z-index: 100000;
+
+}
+
+.suc p {
+
+    font-size: 15px;
+    padding: 8px 20px;
+}
+
+span {
+    float: right;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    height: 2px;
+    width: 0;
+    border-radius: 50px;
+    animation: lineMove 4s;
+}
+
+@keyframes lineMove {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
